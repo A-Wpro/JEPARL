@@ -4,19 +4,22 @@ import numpy as np
 import pygame
 
 class CustomEnv(gym.Env):
-    def __init__(self, agent_size=5, world_size=100, visible=False):
+    def __init__(self, agent_size=5, world_size=125, visible=False, dmg_pixel_prop=0.05, bonus_pixel_prop=0.01, hp=10):
         super(CustomEnv, self).__init__()
 
         self.agent_size = agent_size
         self.world_size = world_size
         self.visible = visible
+        self.dmg_pixel_prop = dmg_pixel_prop
+        self.bonus_pixel_prop = bonus_pixel_prop
+        self.hp = hp
 
         # Define action and observation space
         # Actions: 0: left, 1: right, 2: up, 3: down, 4: idle
         self.action_space = spaces.Discrete(5)
 
         # Observation space: the entire world matrix
-        self.observation_space = spaces.Box(low=0, high=2, shape=(world_size, world_size), dtype=np.int32)
+        self.observation_space = spaces.Box(low=0, high=3, shape=(world_size, world_size), dtype=np.int32)
 
         self.reset()
 
@@ -24,15 +27,21 @@ class CustomEnv(gym.Env):
         # Initialize the world matrix
         self.world = np.ones((self.world_size, self.world_size), dtype=np.int32)
 
+        # Ensure no unintended values in the world matrix
+        self._sanitize_world()
+
         # Place walls (non-walkable areas)
         self._place_walls()
 
         # Place damage zones
         self._place_damage_zones()
 
+        # Place bonus zones
+        self._place_bonus_zones()
+
         # Initialize agent position and health
         self.agent_pos = np.array([self.world_size // 2, self.world_size // 2])
-        self.agent_hp = 10
+        self.agent_hp = self.hp
         self.score = 0
 
         if self.visible:
@@ -40,19 +49,60 @@ class CustomEnv(gym.Env):
 
         return self._get_observation()
 
+    def _sanitize_world(self):
+        # Reset any non-standard values in the world matrix
+        self.world[self.world != 1] = 1
+
     def _place_walls(self):
-        # Example: Place walls in a V shape
-        for i in range(self.world_size // 2):
-            self.world[i, i] = -1
-            self.world[i, self.world_size - 1 - i] = -1
+        # Place walls around the world with a buffer zone
+        buffer_size = 2
+        self.world[:buffer_size, :] = -1
+        self.world[-buffer_size:, :] = -1
+        self.world[:, :buffer_size] = -1
+        self.world[:, -buffer_size:] = -1
+
+        # Place a smaller V-shaped wall
+        v_size = self.world_size // 4
+        for i in range(v_size):
+            self.world[self.world_size // 2 - i, self.world_size // 2 - v_size // 2 + i] = -1
+            self.world[self.world_size // 2 - i, self.world_size // 2 + v_size // 2 - i] = -1
+
+        # Place a round wall (circle)
+        center = (self.world_size // 4, self.world_size // 4)
+        radius = self.world_size // 10
+        for y in range(self.world_size):
+            for x in range(self.world_size):
+                if np.sqrt((x - center[0])**2 + (y - center[1])**2) <= radius:
+                    self.world[y, x] = -1
+
+        # Place a small labyrinth
+        labyrinth_start = (self.world_size * 3 // 4, self.world_size * 3 // 4)
+        self.world[labyrinth_start[0]-1:labyrinth_start[0]+2, labyrinth_start[1]-1] = -1
+        self.world[labyrinth_start[0]-1, labyrinth_start[1]:labyrinth_start[1]+2] = -1
+        self.world[labyrinth_start[0]+1, labyrinth_start[1]-1:labyrinth_start[1]+2] = -1
+        self.world[labyrinth_start[0], labyrinth_start[1]+1] = -1
 
     def _place_damage_zones(self):
-        # Randomly assign 15% of the pixels as damage zones
+        # Randomly assign damage zones, avoiding walls and buffer zones
         total_pixels = self.world_size * self.world_size
-        damage_pixels = int(0.01 * total_pixels)
+        damage_pixels = int(self.dmg_pixel_prop * total_pixels)
         damage_indices = np.random.choice(total_pixels, damage_pixels, replace=False)
         damage_coords = np.unravel_index(damage_indices, (self.world_size, self.world_size))
-        self.world[damage_coords] = 2
+
+        for y, x in zip(damage_coords[0], damage_coords[1]):
+            if self.world[y, x] == 1:  # Only place damage zones in walkable areas
+                self.world[y, x] = 2
+
+    def _place_bonus_zones(self):
+        # Randomly assign bonus zones, avoiding walls and buffer zones
+        total_pixels = self.world_size * self.world_size
+        bonus_pixels = int(self.bonus_pixel_prop * total_pixels)
+        bonus_indices = np.random.choice(total_pixels, bonus_pixels, replace=False)
+        bonus_coords = np.unravel_index(bonus_indices, (self.world_size, self.world_size))
+
+        for y, x in zip(bonus_coords[0], bonus_coords[1]):
+            if self.world[y, x] == 1:  # Only place bonus zones in walkable areas
+                self.world[y, x] = 3
 
     def _get_observation(self):
         # Return the entire world matrix as the observation
@@ -81,6 +131,11 @@ class CustomEnv(gym.Env):
         if self.world[self.agent_pos[0], self.agent_pos[1]] == 2:
             self.agent_hp -= 1
 
+        # Check for bonus zones
+        if self.world[self.agent_pos[0], self.agent_pos[1]] == 3:
+            self.score += 1000
+            self.world[self.agent_pos[0], self.agent_pos[1]] = 1  # Make the bonus zone disappear
+
         # Update score
         self.score += 1
 
@@ -104,7 +159,7 @@ class CustomEnv(gym.Env):
         # Draw the world
         for y in range(self.world_size):
             for x in range(self.world_size):
-                color = (0, 0, 0) if self.world[y, x] == -1 else (255, 0, 0) if self.world[y, x] == 2 else (255, 255, 255)
+                color = (0, 0, 0) if self.world[y, x] == -1 else (255, 0, 0) if self.world[y, x] == 2 else (0, 255, 0) if self.world[y, x] == 3 else (255, 255, 255)
                 pygame.draw.rect(self.screen, color, pygame.Rect(x * self.agent_size, y * self.agent_size, self.agent_size, self.agent_size))
 
         # Draw the agent
@@ -121,7 +176,7 @@ class CustomEnv(gym.Env):
         if self.visible:
             pygame.quit()
 
-env = CustomEnv(visible=True,world_size=100)
+env = CustomEnv(visible=True, world_size=125, hp=1000)
 
 obs = env.reset()
 done = False
