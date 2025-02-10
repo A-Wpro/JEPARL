@@ -61,26 +61,45 @@ class CustomEnv(gym.Env):
         self.world[:, :buffer_size] = -1
         self.world[:, -buffer_size:] = -1
 
-        # Place a smaller V-shaped wall
+        # Place a V-shaped wall with a stair-like pattern
         v_size = self.world_size // 4
         for i in range(v_size):
             self.world[self.world_size // 2 - i, self.world_size // 2 - v_size // 2 + i] = -1
             self.world[self.world_size // 2 - i, self.world_size // 2 + v_size // 2 - i] = -1
+            # Ensure no holes by filling adjacent cells
+            if i < v_size - 1:
+                self.world[self.world_size // 2 - i, self.world_size // 2 - v_size // 2 + i + 1] = -1
+                self.world[self.world_size // 2 - i, self.world_size // 2 + v_size // 2 - i - 1] = -1
+                self.world[self.world_size // 2 - i - 1, self.world_size // 2 - v_size // 2 + i] = -1
+                self.world[self.world_size // 2 - i - 1, self.world_size // 2 + v_size // 2 - i] = -1
 
-        # Place a round wall (circle)
+        # Place a round wall (circle) with a stair-like pattern
         center = (self.world_size // 4, self.world_size // 4)
         radius = self.world_size // 10
         for y in range(self.world_size):
             for x in range(self.world_size):
                 if np.sqrt((x - center[0])**2 + (y - center[1])**2) <= radius:
                     self.world[y, x] = -1
+                    # Ensure no holes by filling adjacent cells
+                    if (x + y) % 2 == 0:
+                        if x + 1 < self.world_size:
+                            self.world[y, x + 1] = -1
+                        if y + 1 < self.world_size:
+                            self.world[y + 1, x] = -1
 
-        # Place a small labyrinth
+        # Place a small labyrinth with a stair-like pattern
         labyrinth_start = (self.world_size * 3 // 4, self.world_size * 3 // 4)
         self.world[labyrinth_start[0]-1:labyrinth_start[0]+2, labyrinth_start[1]-1] = -1
         self.world[labyrinth_start[0]-1, labyrinth_start[1]:labyrinth_start[1]+2] = -1
         self.world[labyrinth_start[0]+1, labyrinth_start[1]-1:labyrinth_start[1]+2] = -1
         self.world[labyrinth_start[0], labyrinth_start[1]+1] = -1
+        # Ensure no holes by filling adjacent cells
+        self.world[labyrinth_start[0]-1, labyrinth_start[1]+1] = -1
+        self.world[labyrinth_start[0]+1, labyrinth_start[1]-1] = -1
+
+
+
+
 
     def _place_damage_zones(self):
         # Randomly assign damage zones, avoiding walls and buffer zones
@@ -107,6 +126,52 @@ class CustomEnv(gym.Env):
     def _get_observation(self):
         # Return the entire world matrix as the observation
         return self.world.copy()
+ 
+    def get_surrounding_observation(self, radius=5):
+        y, x = self.agent_pos
+        
+        # Define bounds for submatrix extraction
+        y_min, y_max = max(0, y - radius), min(self.world_size, y + radius + 1)
+        x_min, x_max = max(0, x - radius), min(self.world_size, x + radius + 1)
+        
+        # Extract the submatrix
+        submatrix = np.full((2 * radius + 1, 2 * radius + 1), -2, dtype=int)
+        world_subsection = self.world[y_min:y_max, x_min:x_max]
+        
+        # Place extracted world values into submatrix
+        submatrix[:world_subsection.shape[0], :world_subsection.shape[1]] = world_subsection
+        
+        # Ensure agent's position is always visible
+        agent_relative_y, agent_relative_x = radius, radius
+        submatrix[agent_relative_y, agent_relative_x] = 0
+        
+        # Ray-casting to determine blocked vision
+        for dy in range(-radius, radius + 1):
+            for dx in range(-radius, radius + 1):
+                if dx == 0 and dy == 0:
+                    continue  # Skip agent's position
+                
+                steps = max(abs(dx), abs(dy))
+                blocked = False
+                for step in range(1, steps + 1):
+                    check_y = y + (dy * step) // steps
+                    check_x = x + (dx * step) // steps
+                    
+                    if 0 <= check_y < self.world_size and 0 <= check_x < self.world_size:
+                        rel_y = check_y - y + radius
+                        rel_x = check_x - x + radius
+                        
+                        if blocked:
+                            submatrix[rel_y, rel_x] = -2  # Mark as not visible
+                        elif self.world[check_y, check_x] == -1:  # Blocking object
+                            blocked = True  # Start marking cells behind as -2
+                            submatrix[rel_y, rel_x] = -1  # Keep the obstacle visible
+                            continue  # Ensure all subsequent cells in this direction are blocked
+                    else:
+                        break  # Stop when out of bounds
+        
+        return submatrix
+
 
     def step(self, action):
         # Define movement based on action
@@ -186,5 +251,9 @@ while not done:
     obs, reward, done, info = env.step(action)
     env.render()
     print(f"Score: {info['score']}, HP: {info['hp']}")
+
+    # Get and print the surrounding observation
+    surrounding = env.get_surrounding_observation(radius=5)
+    print("Surrounding Observation:\n", surrounding)
 
 env.close()
