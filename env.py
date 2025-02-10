@@ -4,7 +4,7 @@ import numpy as np
 import pygame
 
 class CustomEnv(gym.Env):
-    def __init__(self, agent_size=5, world_size=125, visible=False, dmg_pixel_prop=0.05, bonus_pixel_prop=0.01, hp=10):
+    def __init__(self, agent_size=5, world_size=125, visible=False, dmg_pixel_prop=0.05, bonus_pixel_prop=0.01, hp=10,score_up = 1000):
         super(CustomEnv, self).__init__()
 
         self.agent_size = agent_size
@@ -13,6 +13,7 @@ class CustomEnv(gym.Env):
         self.dmg_pixel_prop = dmg_pixel_prop
         self.bonus_pixel_prop = bonus_pixel_prop
         self.hp = hp
+        self.score_up = score_up
 
         # Define action and observation space
         # Actions: 0: left, 1: right, 2: up, 3: down, 4: idle
@@ -127,7 +128,7 @@ class CustomEnv(gym.Env):
         # Return the entire world matrix as the observation
         return self.world.copy()
  
-    def get_surrounding_observation(self, radius=5):
+    def get_surrounding_observation(self, radius):
         y, x = self.agent_pos
         
         # Define bounds for submatrix extraction
@@ -198,7 +199,7 @@ class CustomEnv(gym.Env):
 
         # Check for bonus zones
         if self.world[self.agent_pos[0], self.agent_pos[1]] == 3:
-            self.score += 1000
+            self.score += self.score_up
             self.world[self.agent_pos[0], self.agent_pos[1]] = 1  # Make the bonus zone disappear
 
         # Update score
@@ -241,19 +242,4 @@ class CustomEnv(gym.Env):
         if self.visible:
             pygame.quit()
 
-env = CustomEnv(visible=True, world_size=125, hp=1000)
-
-obs = env.reset()
-done = False
-
-while not done:
-    action = env.action_space.sample()  # Random action
-    obs, reward, done, info = env.step(action)
-    env.render()
-    print(f"Score: {info['score']}, HP: {info['hp']}")
-
-    # Get and print the surrounding observation
-    surrounding = env.get_surrounding_observation(radius=5)
-    print("Surrounding Observation:\n", surrounding)
-
-env.close()
+ 
