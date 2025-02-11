@@ -14,8 +14,8 @@ class DQNAgent:
         self.gamma = 0.95
         self.epsilon = 1.0
         self.epsilon_min = 0.01
-        self.epsilon_decay = 0.995
-        self.learning_rate = 0.001
+        self.epsilon_decay = 0.9999
+        self.learning_rate = 0.25
         self.model = self._build_model().to(self.device)
         self.optimizer = optim.Adam(self.model.parameters(), lr=self.learning_rate)
         self.scheduler = optim.lr_scheduler.ExponentialLR(self.optimizer, gamma=0.99)  # Decaying learning rate

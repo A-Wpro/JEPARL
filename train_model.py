@@ -4,12 +4,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Initialize the environment and agent
-env = CustomEnv(visible=False, world_size=125, hp=5)
+env = CustomEnv(visible=False, world_size=125, hp=3)
 state_size = (11, 11)  # Surrounding observation size
 action_size = env.action_space.n
 agent = DQNAgent(state_size, action_size)
 done = False
-batch_size = 16
+batch_size = 32
 
 EPISODES = 1000
 scores = []  # List to store scores for each episode

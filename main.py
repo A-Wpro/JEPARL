@@ -3,7 +3,7 @@ from dqn_agent import DQNAgent
 import numpy as np
 
 # Initialize the environment and agent
-env = CustomEnv(visible=True, world_size=125, hp=1000)
+env = CustomEnv(visible=True, world_size=125, hp=3)
 state_size = (11, 11)  # Surrounding observation size
 action_size = env.action_space.n
 agent = DQNAgent(state_size, action_size)
