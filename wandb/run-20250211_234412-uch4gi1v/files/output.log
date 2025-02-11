@@ -1,0 +1,757 @@
+Episode 1/1000
+Episode: 1/1000, Score: 9950, Epsilon: 1.0
+Episode 2/1000
+Episode: 2/1000, Score: 29900, Epsilon: 1.0
+Episode 3/1000
+Episode: 3/1000, Score: 9910, Epsilon: 1.0
+Episode 4/1000
+Episode: 4/1000, Score: 50900, Epsilon: 0.99
+Episode 5/1000
+Episode: 5/1000, Score: 19920, Epsilon: 0.99
+Episode 6/1000
+Episode: 6/1000, Score: 50560, Epsilon: 0.98
+Episode 7/1000
+Episode: 7/1000, Score: 40900, Epsilon: 0.97
+Episode 8/1000
+Episode: 8/1000, Score: 30130, Epsilon: 0.97
+Episode 9/1000
+Episode: 9/1000, Score: 29980, Epsilon: 0.97
+Episode 10/1000
+Episode: 10/1000, Score: 91000, Epsilon: 0.96
+Episode 11/1000
+Episode: 11/1000, Score: 40250, Epsilon: 0.96
+Episode 12/1000
+Episode: 12/1000, Score: 50010, Epsilon: 0.95
+Episode 13/1000
+Episode: 13/1000, Score: -220, Epsilon: 0.95
+Episode 14/1000
+Episode: 14/1000, Score: 70070, Epsilon: 0.95
+Episode 15/1000
+Episode: 15/1000, Score: -60, Epsilon: 0.95
+Episode 16/1000
+Episode: 16/1000, Score: 20000, Epsilon: 0.95
+Episode 17/1000
+Episode: 17/1000, Score: 20600, Epsilon: 0.94
+Episode 18/1000
+Episode: 18/1000, Score: 30100, Epsilon: 0.94
+Episode 19/1000
+Episode: 19/1000, Score: 9870, Epsilon: 0.93
+Episode 20/1000
+Episode: 20/1000, Score: 60800, Epsilon: 0.93
+Episode 21/1000
+Episode: 21/1000, Score: 20000, Epsilon: 0.92
+Episode 22/1000
+Episode: 22/1000, Score: 60900, Epsilon: 0.92
+Episode 23/1000
+Episode: 23/1000, Score: 40520, Epsilon: 0.91
+Episode 24/1000
+Episode: 24/1000, Score: 91000, Epsilon: 0.9
+Episode 25/1000
+Episode: 25/1000, Score: 50200, Epsilon: 0.9
+Episode 26/1000
+Episode: 26/1000, Score: 19960, Epsilon: 0.9
+Episode 27/1000
+Episode: 27/1000, Score: 39960, Epsilon: 0.9
+Episode 28/1000
+Episode: 28/1000, Score: 60800, Epsilon: 0.89
+Episode 29/1000
+Episode: 29/1000, Score: -250, Epsilon: 0.89
+Episode 30/1000
+Episode: 30/1000, Score: 70700, Epsilon: 0.88
+Episode 31/1000
+Episode: 31/1000, Score: 90610, Epsilon: 0.88
+Episode 32/1000
+Episode: 32/1000, Score: 60800, Epsilon: 0.87
+Episode 33/1000
+Episode: 33/1000, Score: 9830, Epsilon: 0.87
+Episode 34/1000
+Episode: 34/1000, Score: 9920, Epsilon: 0.87
+Episode 35/1000
+Episode: 35/1000, Score: 10290, Epsilon: 0.86
+Episode 36/1000
+Episode: 36/1000, Score: 71000, Epsilon: 0.86
+Episode 37/1000
+Episode: 37/1000, Score: 19900, Epsilon: 0.85
+Episode 38/1000
+Episode: 38/1000, Score: 9910, Epsilon: 0.85
+Episode 39/1000
+Episode: 39/1000, Score: 40090, Epsilon: 0.85
+Episode 40/1000
+Episode: 40/1000, Score: 80530, Epsilon: 0.84
+Episode 41/1000
+Episode: 41/1000, Score: 60330, Epsilon: 0.84
+Episode 42/1000
+Episode: 42/1000, Score: 61000, Epsilon: 0.83
+Episode 43/1000
+Episode: 43/1000, Score: 21000, Epsilon: 0.83
+Episode 44/1000
+Episode: 44/1000, Score: -160, Epsilon: 0.83
+Episode 45/1000
+Episode: 45/1000, Score: 10150, Epsilon: 0.82
+Episode 46/1000
+Episode: 46/1000, Score: 20370, Epsilon: 0.82
+Episode 47/1000
+Episode: 47/1000, Score: 29900, Epsilon: 0.82
+Episode 48/1000
+Episode: 48/1000, Score: 40190, Epsilon: 0.81
+Episode 49/1000
+Episode: 49/1000, Score: 30800, Epsilon: 0.81
+Episode 50/1000
+Episode: 50/1000, Score: 10800, Epsilon: 0.8
+Episode 51/1000
+Episode: 51/1000, Score: 40180, Epsilon: 0.8
+Episode 52/1000
+Episode: 52/1000, Score: 90900, Epsilon: 0.79
+Episode 53/1000
+Episode: 53/1000, Score: 41000, Epsilon: 0.79
+Episode 54/1000
+Episode: 54/1000, Score: -100, Epsilon: 0.78
+Episode 55/1000
+Episode: 55/1000, Score: 40410, Epsilon: 0.78
+Episode 56/1000
+Episode: 56/1000, Score: 50400, Epsilon: 0.78
+Episode 57/1000
+Episode: 57/1000, Score: 29980, Epsilon: 0.77
+Episode 58/1000
+Episode: 58/1000, Score: 30060, Epsilon: 0.77
+Episode 59/1000
+Episode: 59/1000, Score: 60900, Epsilon: 0.77
+Episode 60/1000
+Episode: 60/1000, Score: -220, Epsilon: 0.76
+Episode 61/1000
+Episode: 61/1000, Score: 51000, Epsilon: 0.76
+Episode 62/1000
+Episode: 62/1000, Score: 80800, Epsilon: 0.75
+Episode 63/1000
+Episode: 63/1000, Score: 50280, Epsilon: 0.75
+Episode 64/1000
+Episode: 64/1000, Score: 30100, Epsilon: 0.75
+Episode 65/1000
+Episode: 65/1000, Score: 90400, Epsilon: 0.74
+Episode 66/1000
+Episode: 66/1000, Score: 20060, Epsilon: 0.74
+Episode 67/1000
+Episode: 67/1000, Score: 70230, Epsilon: 0.74
+Episode 68/1000
+Episode: 68/1000, Score: 10150, Epsilon: 0.73
+Episode 69/1000
+Episode: 69/1000, Score: 19840, Epsilon: 0.73
+Episode 70/1000
+Episode: 70/1000, Score: 71000, Epsilon: 0.73
+Episode 71/1000
+Episode: 71/1000, Score: 19870, Epsilon: 0.73
+Episode 72/1000
+Episode: 72/1000, Score: 20640, Epsilon: 0.72
+Episode 73/1000
+Episode: 73/1000, Score: -90, Epsilon: 0.72
+Episode 74/1000
+Episode: 74/1000, Score: 91000, Epsilon: 0.71
+Episode 75/1000
+Episode: 75/1000, Score: 9760, Epsilon: 0.71
+Episode 76/1000
+Episode: 76/1000, Score: 110560, Epsilon: 0.71
+Episode 77/1000
+Episode: 77/1000, Score: 50330, Epsilon: 0.71
+Episode 78/1000
+Episode: 78/1000, Score: 51000, Epsilon: 0.7
+Episode 79/1000
+Episode: 79/1000, Score: 30160, Epsilon: 0.7
+Episode 80/1000
+Episode: 80/1000, Score: 30480, Epsilon: 0.69
+Episode 81/1000
+Episode: 81/1000, Score: 100900, Epsilon: 0.69
+Episode 82/1000
+Episode: 82/1000, Score: 51000, Epsilon: 0.68
+Episode 83/1000
+Episode: 83/1000, Score: 10170, Epsilon: 0.68
+Episode 84/1000
+Episode: 84/1000, Score: 80560, Epsilon: 0.68
+Episode 85/1000
+Episode: 85/1000, Score: 19840, Epsilon: 0.67
+Episode 86/1000
+Episode: 86/1000, Score: 19800, Epsilon: 0.67
+Episode 87/1000
+Episode: 87/1000, Score: 19870, Epsilon: 0.67
+Episode 88/1000
+Episode: 88/1000, Score: 61000, Epsilon: 0.67
+Episode 89/1000
+Episode: 89/1000, Score: 20100, Epsilon: 0.67
+Episode 90/1000
+Episode: 90/1000, Score: 80800, Epsilon: 0.66
+Episode 91/1000
+Episode: 91/1000, Score: 30170, Epsilon: 0.66
+Episode 92/1000
+Episode: 92/1000, Score: -210, Epsilon: 0.66
+Episode 93/1000
+Episode: 93/1000, Score: 50350, Epsilon: 0.65
+Episode 94/1000
+Episode: 94/1000, Score: 9750, Epsilon: 0.65
+Episode 95/1000
+Episode: 95/1000, Score: 30130, Epsilon: 0.65
+Episode 96/1000
+Episode: 96/1000, Score: 9930, Epsilon: 0.65
+Episode 97/1000
+Episode: 97/1000, Score: -160, Epsilon: 0.65
+Episode 98/1000
+Episode: 98/1000, Score: 9800, Epsilon: 0.65
+Episode 99/1000
+Episode: 99/1000, Score: 80800, Epsilon: 0.64
+Episode 100/1000
+Episode: 100/1000, Score: 50420, Epsilon: 0.64
+Episode 101/1000
+Episode: 101/1000, Score: 40200, Epsilon: 0.64
+Episode 102/1000
+Episode: 102/1000, Score: 10050, Epsilon: 0.64
+Episode 103/1000
+Episode: 103/1000, Score: 60640, Epsilon: 0.63
+Episode 104/1000
+Episode: 104/1000, Score: 61000, Epsilon: 0.63
+Episode 105/1000
+Episode: 105/1000, Score: 30800, Epsilon: 0.62
+Episode 106/1000
+Episode: 106/1000, Score: 19970, Epsilon: 0.62
+Episode 107/1000
+Episode: 107/1000, Score: 40110, Epsilon: 0.62
+Episode 108/1000
+Episode: 108/1000, Score: 60800, Epsilon: 0.61
+Episode 109/1000
+Episode: 109/1000, Score: 60490, Epsilon: 0.61
+Episode 110/1000
+Episode: 110/1000, Score: 40290, Epsilon: 0.61
+Episode 111/1000
+Episode: 111/1000, Score: 91000, Epsilon: 0.6
+Episode 112/1000
+Episode: 112/1000, Score: 60610, Epsilon: 0.6
+Episode 113/1000
+Episode: 113/1000, Score: 20220, Epsilon: 0.59
+Episode 114/1000
+Episode: 114/1000, Score: 50800, Epsilon: 0.59
+Episode 115/1000
+Episode: 115/1000, Score: 71000, Epsilon: 0.58
+Episode 116/1000
+Episode: 116/1000, Score: 60800, Epsilon: 0.58
+Episode 117/1000
+Episode: 117/1000, Score: 60800, Epsilon: 0.58
+Episode 118/1000
+Episode: 118/1000, Score: 40540, Epsilon: 0.57
+Episode 119/1000
+Episode: 119/1000, Score: 40510, Epsilon: 0.57
+Episode 120/1000
+Episode: 120/1000, Score: 30070, Epsilon: 0.57
+Episode 121/1000
+Episode: 121/1000, Score: 51000, Epsilon: 0.56
+Episode 122/1000
+Episode: 122/1000, Score: 51000, Epsilon: 0.56
+Episode 123/1000
+Episode: 123/1000, Score: 800, Epsilon: 0.55
+Episode 124/1000
+Episode: 124/1000, Score: 60330, Epsilon: 0.55
+Episode 125/1000
+Episode: 125/1000, Score: 40060, Epsilon: 0.55
+Episode 126/1000
+Episode: 126/1000, Score: 40650, Epsilon: 0.54
+Episode 127/1000
+Episode: 127/1000, Score: 30900, Epsilon: 0.54
+Episode 128/1000
+Episode: 128/1000, Score: 60220, Epsilon: 0.54
+Episode 129/1000
+Episode: 129/1000, Score: -240, Epsilon: 0.54
+Episode 130/1000
+Episode: 130/1000, Score: 20020, Epsilon: 0.54
+Episode 131/1000
+Episode: 131/1000, Score: 40900, Epsilon: 0.53
+Episode 132/1000
+Episode: 132/1000, Score: 80800, Epsilon: 0.53
+Episode 133/1000
+Episode: 133/1000, Score: -50, Epsilon: 0.53
+Episode 134/1000
+Episode: 134/1000, Score: 30030, Epsilon: 0.53
+Episode 135/1000
+Episode: 135/1000, Score: 59980, Epsilon: 0.52
+Episode 136/1000
+Episode: 136/1000, Score: 30800, Epsilon: 0.52
+Episode 137/1000
+Episode: 137/1000, Score: 30150, Epsilon: 0.52
+Episode 138/1000
+Episode: 138/1000, Score: 51000, Epsilon: 0.51
+Episode 139/1000
+Episode: 139/1000, Score: 40030, Epsilon: 0.51
+Episode 140/1000
+Episode: 140/1000, Score: 20040, Epsilon: 0.51
+Episode 141/1000
+Episode: 141/1000, Score: -200, Epsilon: 0.51
+Episode 142/1000
+Episode: 142/1000, Score: 19800, Epsilon: 0.51
+Episode 143/1000
+Episode: 143/1000, Score: -270, Epsilon: 0.51
+Episode 144/1000
+Episode: 144/1000, Score: 70800, Epsilon: 0.51
+Episode 145/1000
+Episode: 145/1000, Score: 50390, Epsilon: 0.5
+Episode 146/1000
+Episode: 146/1000, Score: 30180, Epsilon: 0.5
+Episode 147/1000
+Episode: 147/1000, Score: 70900, Epsilon: 0.5
+Episode 148/1000
+Episode: 148/1000, Score: 9990, Epsilon: 0.5
+Episode 149/1000
+Episode: 149/1000, Score: 50240, Epsilon: 0.49
+Episode 150/1000
+Episode: 150/1000, Score: -120, Epsilon: 0.49
+Episode 151/1000
+Episode: 151/1000, Score: -60, Epsilon: 0.49
+Episode 152/1000
+Episode: 152/1000, Score: 60800, Epsilon: 0.49
+Episode 153/1000
+Episode: 153/1000, Score: 60050, Epsilon: 0.49
+Episode 154/1000
+Episode: 154/1000, Score: 20040, Epsilon: 0.49
+Episode 155/1000
+Episode: 155/1000, Score: 110590, Epsilon: 0.48
+Episode 156/1000
+Episode: 156/1000, Score: -200, Epsilon: 0.48
+Episode 157/1000
+Episode: 157/1000, Score: 130800, Epsilon: 0.48
+Episode 158/1000
+Episode: 158/1000, Score: 29880, Epsilon: 0.48
+Episode 159/1000
+Episode: 159/1000, Score: 50050, Epsilon: 0.48
+Episode 160/1000
+Episode: 160/1000, Score: 10070, Epsilon: 0.47
+Episode 161/1000
+Episode: 161/1000, Score: 51000, Epsilon: 0.47
+Episode 162/1000
+Episode: 162/1000, Score: 80800, Epsilon: 0.47
+Episode 163/1000
+Episode: 163/1000, Score: 40010, Epsilon: 0.47
+Episode 164/1000
+Episode: 164/1000, Score: 110640, Epsilon: 0.46
+Episode 165/1000
+Episode: 165/1000, Score: 19970, Epsilon: 0.46
+Episode 166/1000
+Episode: 166/1000, Score: 9750, Epsilon: 0.46
+Episode 167/1000
+Episode: 167/1000, Score: 39970, Epsilon: 0.46
+Episode 168/1000
+Episode: 168/1000, Score: 29900, Epsilon: 0.46
+Episode 169/1000
+Episode: 169/1000, Score: 110800, Epsilon: 0.46
+Episode 170/1000
+Episode: 170/1000, Score: 50110, Epsilon: 0.45
+Episode 171/1000
+Episode: 171/1000, Score: 20090, Epsilon: 0.45
+Episode 172/1000
+Episode: 172/1000, Score: 60800, Epsilon: 0.45
+Episode 173/1000
+Episode: 173/1000, Score: 30120, Epsilon: 0.45
+Episode 174/1000
+Episode: 174/1000, Score: 60620, Epsilon: 0.44
+Episode 175/1000
+Episode: 175/1000, Score: 60800, Epsilon: 0.44
+Episode 176/1000
+Episode: 176/1000, Score: 19850, Epsilon: 0.44
+Episode 177/1000
+Episode: 177/1000, Score: 40800, Epsilon: 0.44
+Episode 178/1000
+Episode: 178/1000, Score: 70320, Epsilon: 0.43
+Episode 179/1000
+Episode: 179/1000, Score: 110310, Epsilon: 0.43
+Episode 180/1000
+Episode: 180/1000, Score: 51000, Epsilon: 0.43
+Episode 181/1000
+Episode: 181/1000, Score: 60100, Epsilon: 0.43
+Episode 182/1000
+Episode: 182/1000, Score: 50530, Epsilon: 0.43
+Episode 183/1000
+Episode: 183/1000, Score: 39960, Epsilon: 0.42
+Episode 184/1000
+Episode: 184/1000, Score: 60800, Epsilon: 0.42
+Episode 185/1000
+Episode: 185/1000, Score: 100900, Epsilon: 0.42
+Episode 186/1000
+Episode: 186/1000, Score: 31000, Epsilon: 0.41
+Episode 187/1000
+Episode: 187/1000, Score: 140800, Epsilon: 0.41
+Episode 188/1000
+Episode: 188/1000, Score: 50800, Epsilon: 0.41
+Episode 189/1000
+Episode: 189/1000, Score: 20520, Epsilon: 0.4
+Episode 190/1000
+Episode: 190/1000, Score: 31000, Epsilon: 0.4
+Episode 191/1000
+Episode: 191/1000, Score: 190, Epsilon: 0.4
+Episode 192/1000
+Episode: 192/1000, Score: 29850, Epsilon: 0.4
+Episode 193/1000
+Episode: 193/1000, Score: 21000, Epsilon: 0.4
+Episode 194/1000
+Episode: 194/1000, Score: 31000, Epsilon: 0.39
+Episode 195/1000
+Episode: 195/1000, Score: 20160, Epsilon: 0.39
+Episode 196/1000
+Episode: 196/1000, Score: 20300, Epsilon: 0.39
+Episode 197/1000
+Episode: 197/1000, Score: 50900, Epsilon: 0.39
+Episode 198/1000
+Episode: 198/1000, Score: 40490, Epsilon: 0.38
+Episode 199/1000
+Episode: 199/1000, Score: -270, Epsilon: 0.38
+Episode 200/1000
+Episode: 200/1000, Score: -270, Epsilon: 0.38
+Episode 201/1000
+Episode: 201/1000, Score: 140800, Epsilon: 0.38
+Episode 202/1000
+Episode: 202/1000, Score: 20800, Epsilon: 0.38
+Episode 203/1000
+Episode: 203/1000, Score: 70250, Epsilon: 0.38
+Episode 204/1000
+Episode: 204/1000, Score: 50230, Epsilon: 0.37
+Episode 205/1000
+Episode: 205/1000, Score: 30260, Epsilon: 0.37
+Episode 206/1000
+Episode: 206/1000, Score: -250, Epsilon: 0.37
+Episode 207/1000
+Episode: 207/1000, Score: 91000, Epsilon: 0.37
+Episode 208/1000
+Episode: 208/1000, Score: 70510, Epsilon: 0.37
+Episode 209/1000
+Episode: 209/1000, Score: 19800, Epsilon: 0.37
+Episode 210/1000
+Episode: 210/1000, Score: 29930, Epsilon: 0.37
+Episode 211/1000
+Episode: 211/1000, Score: 40070, Epsilon: 0.37
+Episode 212/1000
+Episode: 212/1000, Score: -190, Epsilon: 0.37
+Episode 213/1000
+Episode: 213/1000, Score: 31000, Epsilon: 0.36
+Episode 214/1000
+Episode: 214/1000, Score: 20900, Epsilon: 0.36
+Episode 215/1000
+Episode: 215/1000, Score: 60280, Epsilon: 0.36
+Episode 216/1000
+Episode: 216/1000, Score: 30240, Epsilon: 0.36
+Episode 217/1000
+Episode: 217/1000, Score: 70640, Epsilon: 0.35
+Episode 218/1000
+Episode: 218/1000, Score: 80800, Epsilon: 0.35
+Episode 219/1000
+Episode: 219/1000, Score: 60080, Epsilon: 0.35
+Episode 220/1000
+Episode: 220/1000, Score: 30, Epsilon: 0.35
+Episode 221/1000
+Episode: 221/1000, Score: 90500, Epsilon: 0.35
+Episode 222/1000
+Episode: 222/1000, Score: 110800, Epsilon: 0.34
+Episode 223/1000
+Episode: 223/1000, Score: 40340, Epsilon: 0.34
+Episode 224/1000
+Episode: 224/1000, Score: 19840, Epsilon: 0.34
+Episode 225/1000
+Episode: 225/1000, Score: 41000, Epsilon: 0.34
+Episode 226/1000
+Episode: 226/1000, Score: 21000, Epsilon: 0.34
+Episode 227/1000
+Episode: 227/1000, Score: 30240, Epsilon: 0.33
+Episode 228/1000
+Episode: 228/1000, Score: 10080, Epsilon: 0.33
+Episode 229/1000
+Episode: 229/1000, Score: 31000, Epsilon: 0.33
+Episode 230/1000
+Episode: 230/1000, Score: 9830, Epsilon: 0.33
+Episode 231/1000
+Episode: 231/1000, Score: 20900, Epsilon: 0.33
+Episode 232/1000
+Episode: 232/1000, Score: 41000, Epsilon: 0.33
+Episode 233/1000
+Episode: 233/1000, Score: 31000, Epsilon: 0.32
+Episode 234/1000
+Episode: 234/1000, Score: 900, Epsilon: 0.32
+Episode 235/1000
+Episode: 235/1000, Score: 30900, Epsilon: 0.32
+Episode 236/1000
+Episode: 236/1000, Score: 9850, Epsilon: 0.32
+Episode 237/1000
+Episode: 237/1000, Score: 50900, Epsilon: 0.31
+Episode 238/1000
+Episode: 238/1000, Score: 30900, Epsilon: 0.31
+Episode 239/1000
+Episode: 239/1000, Score: -150, Epsilon: 0.31
+Episode 240/1000
+Episode: 240/1000, Score: 20900, Epsilon: 0.31
+Episode 241/1000
+Episode: 241/1000, Score: 30800, Epsilon: 0.31
+Episode 242/1000
+Episode: 242/1000, Score: 19950, Epsilon: 0.31
+Episode 243/1000
+Episode: 243/1000, Score: 81000, Epsilon: 0.3
+Episode 244/1000
+Episode: 244/1000, Score: 20340, Epsilon: 0.3
+Episode 245/1000
+Episode: 245/1000, Score: 60900, Epsilon: 0.3
+Episode 246/1000
+Episode: 246/1000, Score: 20800, Epsilon: 0.3
+Episode 247/1000
+Episode: 247/1000, Score: 40900, Epsilon: 0.3
+Episode 248/1000
+Episode: 248/1000, Score: 9770, Epsilon: 0.3
+Episode 249/1000
+Episode: 249/1000, Score: 50900, Epsilon: 0.29
+Episode 250/1000
+Episode: 250/1000, Score: 60900, Epsilon: 0.29
+Episode 251/1000
+Episode: 251/1000, Score: 20900, Epsilon: 0.29
+Episode 252/1000
+Episode: 252/1000, Score: 30360, Epsilon: 0.29
+Episode 253/1000
+Episode: 253/1000, Score: 20800, Epsilon: 0.28
+Episode 254/1000
+Episode: 254/1000, Score: 1000, Epsilon: 0.28
+Episode 255/1000
+Episode: 255/1000, Score: 9920, Epsilon: 0.28
+Episode 256/1000
+Episode: 256/1000, Score: 20080, Epsilon: 0.28
+Episode 257/1000
+Episode: 257/1000, Score: 30660, Epsilon: 0.28
+Episode 258/1000
+Episode: 258/1000, Score: 20230, Epsilon: 0.28
+Episode 259/1000
+Episode: 259/1000, Score: 130800, Epsilon: 0.28
+Episode 260/1000
+Episode: 260/1000, Score: 20040, Epsilon: 0.27
+Episode 261/1000
+Episode: 261/1000, Score: 130800, Epsilon: 0.27
+Episode 262/1000
+Episode: 262/1000, Score: 30900, Epsilon: 0.27
+Episode 263/1000
+Episode: 263/1000, Score: 39960, Epsilon: 0.27
+Episode 264/1000
+Episode: 264/1000, Score: 20130, Epsilon: 0.27
+Episode 265/1000
+Episode: 265/1000, Score: 70800, Epsilon: 0.27
+Episode 266/1000
+Episode: 266/1000, Score: 20900, Epsilon: 0.26
+Episode 267/1000
+Episode: 267/1000, Score: 11000, Epsilon: 0.26
+Episode 268/1000
+Episode: 268/1000, Score: 29910, Epsilon: 0.26
+Episode 269/1000
+Episode: 269/1000, Score: -270, Epsilon: 0.26
+Episode 270/1000
+Episode: 270/1000, Score: 60900, Epsilon: 0.26
+Episode 271/1000
+Episode: 271/1000, Score: 40900, Epsilon: 0.26
+Episode 272/1000
+Episode: 272/1000, Score: 30900, Epsilon: 0.26
+Episode 273/1000
+Episode: 273/1000, Score: 50300, Epsilon: 0.25
+Episode 274/1000
+Episode: 274/1000, Score: 30900, Epsilon: 0.25
+Episode 275/1000
+Episode: 275/1000, Score: 40800, Epsilon: 0.25
+Episode 276/1000
+Episode: 276/1000, Score: 71000, Epsilon: 0.25
+Episode 277/1000
+Episode: 277/1000, Score: 30, Epsilon: 0.25
+Episode 278/1000
+Episode: 278/1000, Score: 30800, Epsilon: 0.25
+Episode 279/1000
+Episode: 279/1000, Score: 9750, Epsilon: 0.25
+Episode 280/1000
+Episode: 280/1000, Score: 9970, Epsilon: 0.24
+Episode 281/1000
+Episode: 281/1000, Score: 1000, Epsilon: 0.24
+Episode 282/1000
+Episode: 282/1000, Score: 40, Epsilon: 0.24
+Episode 283/1000
+Episode: 283/1000, Score: 51000, Epsilon: 0.24
+Episode 284/1000
+Episode: 284/1000, Score: -210, Epsilon: 0.24
+Episode 285/1000
+Episode: 285/1000, Score: 10040, Epsilon: 0.24
+Episode 286/1000
+Episode: 286/1000, Score: 41000, Epsilon: 0.24
+Episode 287/1000
+Episode: 287/1000, Score: 41000, Epsilon: 0.24
+Episode 288/1000
+Episode: 288/1000, Score: 41000, Epsilon: 0.23
+Episode 289/1000
+Episode: 289/1000, Score: 71000, Epsilon: 0.23
+Episode 290/1000
+Episode: 290/1000, Score: 40900, Epsilon: 0.23
+Episode 291/1000
+Episode: 291/1000, Score: 29890, Epsilon: 0.23
+Episode 292/1000
+Episode: 292/1000, Score: -220, Epsilon: 0.23
+Episode 293/1000
+Episode: 293/1000, Score: 10900, Epsilon: 0.23
+Episode 294/1000
+Episode: 294/1000, Score: 49890, Epsilon: 0.23
+Episode 295/1000
+Episode: 295/1000, Score: 10060, Epsilon: 0.23
+Episode 296/1000
+Episode: 296/1000, Score: 70280, Epsilon: 0.23
+Episode 297/1000
+Episode: 297/1000, Score: 30360, Epsilon: 0.22
+Episode 298/1000
+Episode: 298/1000, Score: 29960, Epsilon: 0.22
+Episode 299/1000
+Episode: 299/1000, Score: 21000, Epsilon: 0.22
+Episode 300/1000
+Episode: 300/1000, Score: 10260, Epsilon: 0.22
+Episode 301/1000
+Episode: 301/1000, Score: -250, Epsilon: 0.22
+Episode 302/1000
+Episode: 302/1000, Score: 90800, Epsilon: 0.22
+Episode 303/1000
+Episode: 303/1000, Score: 40250, Epsilon: 0.22
+Episode 304/1000
+Episode: 304/1000, Score: 60640, Epsilon: 0.22
+Episode 305/1000
+Episode: 305/1000, Score: 80440, Epsilon: 0.22
+Episode 306/1000
+Episode: 306/1000, Score: 30900, Epsilon: 0.21
+Episode 307/1000
+Episode: 307/1000, Score: 110900, Epsilon: 0.21
+Episode 308/1000
+Episode: 308/1000, Score: 30800, Epsilon: 0.21
+Episode 309/1000
+Episode: 309/1000, Score: 40900, Epsilon: 0.21
+Episode 310/1000
+Episode: 310/1000, Score: 70800, Epsilon: 0.21
+Episode 311/1000
+Episode: 311/1000, Score: 9960, Epsilon: 0.21
+Episode 312/1000
+Episode: 312/1000, Score: 110800, Epsilon: 0.21
+Episode 313/1000
+Episode: 313/1000, Score: 60330, Epsilon: 0.2
+Episode 314/1000
+Episode: 314/1000, Score: 49980, Epsilon: 0.2
+Episode 315/1000
+Episode: 315/1000, Score: 30310, Epsilon: 0.2
+Episode 316/1000
+Episode: 316/1000, Score: 9920, Epsilon: 0.2
+Episode 317/1000
+Episode: 317/1000, Score: 80250, Epsilon: 0.2
+Episode 318/1000
+Episode: 318/1000, Score: 30230, Epsilon: 0.2
+Episode 319/1000
+Episode: 319/1000, Score: 150800, Epsilon: 0.2
+Episode 320/1000
+Episode: 320/1000, Score: 80350, Epsilon: 0.2
+Episode 321/1000
+Episode: 321/1000, Score: 70450, Epsilon: 0.2
+Episode 322/1000
+Episode: 322/1000, Score: 60410, Epsilon: 0.2
+Episode 323/1000
+Episode: 323/1000, Score: 100800, Epsilon: 0.19
+Episode 324/1000
+Episode: 324/1000, Score: 39850, Epsilon: 0.19
+Episode 325/1000
+Episode: 325/1000, Score: 70230, Epsilon: 0.19
+Episode 326/1000
+Episode: 326/1000, Score: 170800, Epsilon: 0.19
+Episode 327/1000
+Episode: 327/1000, Score: 31000, Epsilon: 0.19
+Episode 328/1000
+Episode: 328/1000, Score: 21000, Epsilon: 0.19
+Episode 329/1000
+Episode: 329/1000, Score: 41000, Epsilon: 0.19
+Episode 330/1000
+Episode: 330/1000, Score: 10900, Epsilon: 0.19
+Episode 331/1000
+Episode: 331/1000, Score: 19840, Epsilon: 0.19
+Episode 332/1000
+Episode: 332/1000, Score: 30800, Epsilon: 0.18
+Episode 333/1000
+Episode: 333/1000, Score: 21000, Epsilon: 0.18
+Episode 334/1000
+Episode: 334/1000, Score: 20900, Epsilon: 0.18
+Episode 335/1000
+Episode: 335/1000, Score: 31000, Epsilon: 0.18
+Episode 336/1000
+Episode: 336/1000, Score: 10900, Epsilon: 0.18
+Episode 337/1000
+Episode: 337/1000, Score: 31000, Epsilon: 0.18
+Episode 338/1000
+Episode: 338/1000, Score: 30900, Epsilon: 0.18
+Episode 339/1000
+Episode: 339/1000, Score: 10900, Epsilon: 0.17
+Episode 340/1000
+Episode: 340/1000, Score: 9790, Epsilon: 0.17
+Episode 341/1000
+Episode: 341/1000, Score: 21000, Epsilon: 0.17
+Episode 342/1000
+Episode: 342/1000, Score: 40800, Epsilon: 0.17
+Episode 343/1000
+Episode: 343/1000, Score: 30900, Epsilon: 0.17
+Episode 344/1000
+Episode: 344/1000, Score: 21000, Epsilon: 0.17
+Episode 345/1000
+Episode: 345/1000, Score: 70150, Epsilon: 0.17
+Episode 346/1000
+Episode: 346/1000, Score: 30020, Epsilon: 0.17
+Episode 347/1000
+Episode: 347/1000, Score: 11000, Epsilon: 0.17
+Episode 348/1000
+Episode: 348/1000, Score: 61000, Epsilon: 0.16
+Episode 349/1000
+Episode: 349/1000, Score: 10900, Epsilon: 0.16
+Episode 350/1000
+Episode: 350/1000, Score: 30500, Epsilon: 0.16
+Episode 351/1000
+Episode: 351/1000, Score: 90630, Epsilon: 0.16
+Episode 352/1000
+Episode: 352/1000, Score: 90230, Epsilon: 0.16
+Episode 353/1000
+Episode: 353/1000, Score: 120800, Epsilon: 0.16
+Episode 354/1000
+Episode: 354/1000, Score: 40900, Epsilon: 0.16
+Episode 355/1000
+Episode: 355/1000, Score: 10550, Epsilon: 0.16
+Episode 356/1000
+Episode: 356/1000, Score: 61000, Epsilon: 0.16
+Episode 357/1000
+Episode: 357/1000, Score: -140, Epsilon: 0.16
+Episode 358/1000
+Episode: 358/1000, Score: 30900, Epsilon: 0.15
+Episode 359/1000
+Episode: 359/1000, Score: 900, Epsilon: 0.15
+Episode 360/1000
+Episode: 360/1000, Score: 21000, Epsilon: 0.15
+Episode 361/1000
+Episode: 361/1000, Score: 41000, Epsilon: 0.15
+Episode 362/1000
+Episode: 362/1000, Score: 400, Epsilon: 0.15
+Episode 363/1000
+Episode: 363/1000, Score: 1000, Epsilon: 0.15
+Episode 364/1000
+Episode: 364/1000, Score: 10900, Epsilon: 0.15
+Episode 365/1000
+Episode: 365/1000, Score: 11000, Epsilon: 0.15
+Episode 366/1000
+Episode: 366/1000, Score: 11000, Epsilon: 0.14
+Episode 367/1000
+Episode: 367/1000, Score: 10900, Epsilon: 0.14
+Episode 368/1000
+Episode: 368/1000, Score: 11000, Epsilon: 0.14
+Episode 369/1000
+Episode: 369/1000, Score: 1000, Epsilon: 0.14
+Episode 370/1000
+Episode: 370/1000, Score: 31000, Epsilon: 0.14
+Episode 371/1000
+Episode: 371/1000, Score: 30900, Epsilon: 0.14
+Episode 372/1000
+Episode: 372/1000, Score: 30900, Epsilon: 0.14
+Episode 373/1000
+Episode: 373/1000, Score: 20900, Epsilon: 0.14
+Episode 374/1000
+Episode: 374/1000, Score: 31000, Epsilon: 0.14
+Episode 375/1000
+Episode: 375/1000, Score: 11000, Epsilon: 0.13
+Episode 376/1000
+Episode: 376/1000, Score: 9800, Epsilon: 0.13
+Episode 377/1000
+Episode: 377/1000, Score: 40120, Epsilon: 0.13
+Episode 378/1000
+Episode: 378/1000, Score: 20090, Epsilon: 0.13
+Episode 379/1000

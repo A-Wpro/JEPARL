@@ -1,0 +1,81 @@
+Episode: 1/1000, Score: 21, Epsilon: 1.0
+Episode: 2/1000, Score: 62, Epsilon: 1.0
+Episode: 3/1000, Score: 261, Epsilon: 0.98
+Episode: 4/1000, Score: 36, Epsilon: 0.98
+Episode: 5/1000, Score: 51, Epsilon: 0.98
+Episode: 6/1000, Score: 71, Epsilon: 0.97
+Episode: 7/1000, Score: 20, Epsilon: 0.97
+Episode: 8/1000, Score: 68, Epsilon: 0.97
+Episode: 9/1000, Score: 22, Epsilon: 0.97
+Episode: 10/1000, Score: 150, Epsilon: 0.96
+Episode: 11/1000, Score: 23, Epsilon: 0.96
+Episode: 12/1000, Score: 241, Epsilon: 0.95
+Episode: 13/1000, Score: 94, Epsilon: 0.94
+Episode: 14/1000, Score: 4, Epsilon: 0.94
+Episode: 15/1000, Score: 65, Epsilon: 0.94
+Episode: 16/1000, Score: 2, Epsilon: 0.94
+Episode: 17/1000, Score: 160, Epsilon: 0.93
+Episode: 18/1000, Score: 96, Epsilon: 0.92
+Episode: 19/1000, Score: 297, Epsilon: 0.91
+Episode: 20/1000, Score: 247, Epsilon: 0.9
+Episode: 21/1000, Score: 153, Epsilon: 0.89
+Episode: 22/1000, Score: 4, Epsilon: 0.89
+Episode: 23/1000, Score: 37, Epsilon: 0.89
+Episode: 24/1000, Score: -4, Epsilon: 0.89
+Episode: 25/1000, Score: 209, Epsilon: 0.88
+Episode: 26/1000, Score: 546, Epsilon: 0.85
+Episode: 27/1000, Score: 124, Epsilon: 0.85
+Episode: 28/1000, Score: 222, Epsilon: 0.84
+Episode: 29/1000, Score: 6, Epsilon: 0.84
+Episode: 30/1000, Score: 71, Epsilon: 0.83
+Episode: 31/1000, Score: 84, Epsilon: 0.83
+Episode: 32/1000, Score: 117, Epsilon: 0.82
+Episode: 33/1000, Score: 10, Epsilon: 0.82
+Episode: 34/1000, Score: 3, Epsilon: 0.82
+Episode: 35/1000, Score: 189, Epsilon: 0.81
+Episode: 36/1000, Score: 100, Epsilon: 0.81
+Episode: 37/1000, Score: 114, Epsilon: 0.8
+Episode: 38/1000, Score: 10, Epsilon: 0.8
+Episode: 39/1000, Score: 146, Epsilon: 0.8
+Episode: 40/1000, Score: 290, Epsilon: 0.79
+Episode: 41/1000, Score: 291, Epsilon: 0.77
+Episode: 42/1000, Score: 23, Epsilon: 0.77
+Episode: 43/1000, Score: 81, Epsilon: 0.77
+Episode: 44/1000, Score: 217, Epsilon: 0.76
+Episode: 45/1000, Score: 26, Epsilon: 0.76
+Episode: 46/1000, Score: 7, Epsilon: 0.76
+Episode: 47/1000, Score: 14, Epsilon: 0.76
+Episode: 48/1000, Score: 8, Epsilon: 0.76
+Episode: 49/1000, Score: 55, Epsilon: 0.75
+Episode: 50/1000, Score: 101, Epsilon: 0.75
+Episode: 51/1000, Score: 49, Epsilon: 0.75
+Episode: 52/1000, Score: 66, Epsilon: 0.74
+Episode: 53/1000, Score: 481, Epsilon: 0.73
+Episode: 54/1000, Score: 27, Epsilon: 0.73
+Episode: 55/1000, Score: 93, Epsilon: 0.72
+Episode: 56/1000, Score: 34, Epsilon: 0.72
+Episode: 57/1000, Score: 162, Epsilon: 0.71
+Episode: 58/1000, Score: -3, Epsilon: 0.71
+Episode: 59/1000, Score: 99, Epsilon: 0.71
+Episode: 60/1000, Score: 22, Epsilon: 0.71
+Episode: 61/1000, Score: 41, Epsilon: 0.71
+Episode: 62/1000, Score: 45, Epsilon: 0.7
+Episode: 63/1000, Score: 68, Epsilon: 0.7
+Episode: 64/1000, Score: 55, Epsilon: 0.7
+Episode: 65/1000, Score: 34, Epsilon: 0.7
+Episode: 66/1000, Score: 55, Epsilon: 0.7
+Episode: 67/1000, Score: 75, Epsilon: 0.69
+Episode: 68/1000, Score: 98, Epsilon: 0.69
+Episode: 69/1000, Score: 18, Epsilon: 0.69
+Traceback (most recent call last):
+  File "c:\Python\JEPARL\train_model.py", line 47, in <module>
+  File "c:\Python\JEPARL\train_model.py", line 34, in train_model
+    if len(agent.memory) > batch_size:
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python\JEPARL\dqn_agent.py", line 68, in replay
+    self.scaler.scale(loss).backward()
+  File "C:\Users\adamw\.conda\envs\LLM\Lib\site-packages\torch\_tensor.py", line 522, in backward
+    torch.autograd.backward(
+  File "C:\Users\adamw\.conda\envs\LLM\Lib\site-packages\torch\autograd\__init__.py", line 266, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

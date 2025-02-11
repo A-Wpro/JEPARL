@@ -1,0 +1,15 @@
+{"time":"2025-02-11T23:09:48.2745818+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"C:\\Python\\JEPARL\\wandb\\run-20250211_230948-vggkje2r\\logs\\debug-core.log"}
+{"time":"2025-02-11T23:09:48.3824004+01:00","level":"INFO","msg":"created new stream","id":"vggkje2r"}
+{"time":"2025-02-11T23:09:48.38293+01:00","level":"INFO","msg":"stream: started","id":"vggkje2r"}
+{"time":"2025-02-11T23:09:48.38293+01:00","level":"INFO","msg":"handler: started","stream_id":"vggkje2r"}
+{"time":"2025-02-11T23:09:48.38293+01:00","level":"INFO","msg":"sender: started","stream_id":"vggkje2r"}
+{"time":"2025-02-11T23:09:48.38293+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"vggkje2r"}
+{"time":"2025-02-11T23:09:48.6136271+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-11T23:13:03.4903155+01:00","level":"INFO","msg":"stream: closing","id":"vggkje2r"}
+{"time":"2025-02-11T23:13:03.4903155+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-11T23:13:03.4908505+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-11T23:13:04.0752175+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-11T23:13:04.4816953+01:00","level":"INFO","msg":"handler: closed","stream_id":"vggkje2r"}
+{"time":"2025-02-11T23:13:04.4816953+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"vggkje2r"}
+{"time":"2025-02-11T23:13:04.4816953+01:00","level":"INFO","msg":"sender: closed","stream_id":"vggkje2r"}
+{"time":"2025-02-11T23:13:04.4816953+01:00","level":"INFO","msg":"stream: closed","id":"vggkje2r"}

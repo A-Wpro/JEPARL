@@ -14,14 +14,14 @@ class DQNAgent:
         self.gamma = 0.95  # Discount factor
         self.epsilon = 1.0  # Exploration rate
         self.epsilon_min = 0.01
-        self.epsilon_decay = 0.995
-        self.learning_rate = 0.1  # Adjusted learning rate
+        self.epsilon_decay = 0.99992
+        self.learning_rate = 0.05  # Adjusted learning rate
         self.model = self._build_model().to(self.device)
         self.target_model = self._build_model().to(self.device)
         self.target_model.load_state_dict(self.model.state_dict())
         self.target_model.eval()
         self.optimizer = optim.Adam(self.model.parameters(), lr=self.learning_rate)
-        self.scheduler = optim.lr_scheduler.ExponentialLR(self.optimizer, gamma=0.99)  # Decaying learning rate
+        self.scheduler = optim.lr_scheduler.ExponentialLR(self.optimizer, gamma=0.9998)  # Decaying learning rate
         self.loss_fn = nn.MSELoss()
         self.scaler = torch.cuda.amp.GradScaler()
 
@@ -87,5 +87,5 @@ class DQNAgent:
         wandb.log({
             "learning_rate": self.optimizer.param_groups[0]['lr'],
             "epsilon": self.epsilon,
-            "loss": self.loss if hasattr(self, 'loss') else 0
+            "loss": (self.loss if hasattr(self, 'loss') else 0 - 0) / (1 - 0) # normalize loss for interpretability
         })

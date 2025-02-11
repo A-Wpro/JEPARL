@@ -196,6 +196,7 @@ class CustomEnv(gym.Env):
         # Check for damage zones
         if self.world[self.agent_pos[0], self.agent_pos[1]] == 2:
             self.agent_hp -= 1
+            self.score -= 100
 
         # Check for bonus zones
         if self.world[self.agent_pos[0], self.agent_pos[1]] == 3:
@@ -203,7 +204,7 @@ class CustomEnv(gym.Env):
             self.world[self.agent_pos[0], self.agent_pos[1]] = 1  # Make the bonus zone disappear
 
         # Update score
-        self.score += 1
+        self.score += 10
 
         # Check if the agent is dead
         done = self.agent_hp <= 0

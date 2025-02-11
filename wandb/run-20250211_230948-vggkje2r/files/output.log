@@ -1,0 +1,57 @@
+Episode 1/1000
+Episode: 1/1000, Score: 1140, Epsilon: 0.95
+Episode 2/1000
+Episode: 2/1000, Score: -170, Epsilon: 0.94
+Episode 3/1000
+Episode: 3/1000, Score: 2230, Epsilon: 0.87
+Episode 4/1000
+Episode: 4/1000, Score: -180, Epsilon: 0.86
+Episode 5/1000
+Episode: 5/1000, Score: 710, Epsilon: 0.82
+Episode 6/1000
+Episode: 6/1000, Score: 0, Epsilon: 0.81
+Episode 7/1000
+Episode: 7/1000, Score: 1210, Epsilon: 0.75
+Episode 8/1000
+Episode: 8/1000, Score: -200, Epsilon: 0.75
+Episode 9/1000
+Episode: 9/1000, Score: 460, Epsilon: 0.72
+Episode 10/1000
+Episode: 10/1000, Score: 860, Epsilon: 0.68
+Episode 11/1000
+Episode: 11/1000, Score: 3110, Epsilon: 0.63
+Episode 12/1000
+Episode: 12/1000, Score: 2700, Epsilon: 0.57
+Episode 13/1000
+Episode: 13/1000, Score: 1340, Epsilon: 0.53
+Episode 14/1000
+Episode: 14/1000, Score: 200, Epsilon: 0.51
+Episode 15/1000
+Episode: 15/1000, Score: 80, Epsilon: 0.5
+Episode 16/1000
+Episode 17/1000
+Episode: 17/1000, Score: 390, Epsilon: 0.38
+Episode 18/1000
+Episode: 18/1000, Score: 330, Epsilon: 0.37
+Episode 19/1000
+Episode 20/1000
+Episode 21/1000
+Traceback (most recent call last):
+  File "c:\Python\JEPARL\train_model.py", line 36, in <module>
+    agent.replay(batch_size)
+  File "c:\Python\JEPARL\dqn_agent.py", line 67, in replay
+    loss = self.loss_fn(self.model(state), target_f)
+                        ^^^^^^^^^^^^^^^^^
+  File "C:\Users\adamw\.conda\envs\LLM\Lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\adamw\.conda\envs\LLM\Lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\adamw\.conda\envs\LLM\Lib\site-packages\torch\nn\modules\container.py", line 217, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "C:\Users\adamw\.conda\envs\LLM\Lib\site-packages\torch\nn\modules\module.py", line 1507, in _wrapped_call_impl
+    def _wrapped_call_impl(self, *args, **kwargs):
+
+KeyboardInterrupt

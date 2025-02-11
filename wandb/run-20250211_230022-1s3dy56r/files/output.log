@@ -1,0 +1,96 @@
+Episode 1/1000
+Episode: 1/1000, Score: 1, Epsilon: 1.0
+Episode: 1/1000, Score: 2, Epsilon: 1.0
+Episode: 1/1000, Score: 3, Epsilon: 1.0
+Episode: 1/1000, Score: 4, Epsilon: 1.0
+Episode: 1/1000, Score: 5, Epsilon: 1.0
+Episode: 1/1000, Score: 6, Epsilon: 1.0
+Episode: 1/1000, Score: 7, Epsilon: 1.0
+Episode: 1/1000, Score: 8, Epsilon: 1.0
+Episode: 1/1000, Score: 9, Epsilon: 1.0
+Episode: 1/1000, Score: 10, Epsilon: 1.0
+Episode: 1/1000, Score: 11, Epsilon: 1.0
+Episode: 1/1000, Score: 12, Epsilon: 1.0
+Episode: 1/1000, Score: 13, Epsilon: 1.0
+Episode: 1/1000, Score: 14, Epsilon: 1.0
+Episode: 1/1000, Score: 15, Epsilon: 1.0
+Episode: 1/1000, Score: 16, Epsilon: 1.0
+Episode: 1/1000, Score: 17, Epsilon: 1.0
+Episode: 1/1000, Score: 18, Epsilon: 1.0
+Episode: 1/1000, Score: 19, Epsilon: 1.0
+Episode: 1/1000, Score: 20, Epsilon: 1.0
+Episode: 1/1000, Score: 21, Epsilon: 1.0
+Episode: 1/1000, Score: 22, Epsilon: 1.0
+Episode: 1/1000, Score: 23, Epsilon: 1.0
+Episode: 1/1000, Score: 24, Epsilon: 1.0
+Episode: 1/1000, Score: 25, Epsilon: 1.0
+Episode: 1/1000, Score: 26, Epsilon: 1.0
+Episode: 1/1000, Score: 27, Epsilon: 1.0
+Episode: 1/1000, Score: 28, Epsilon: 1.0
+Episode: 1/1000, Score: 29, Epsilon: 1.0
+Episode: 1/1000, Score: 30, Epsilon: 1.0
+Episode: 1/1000, Score: 31, Epsilon: 1.0
+Episode: 1/1000, Score: 32, Epsilon: 1.0
+Episode: 1/1000, Score: 33, Epsilon: 1.0
+Episode: 1/1000, Score: 34, Epsilon: 1.0
+Episode: 1/1000, Score: 35, Epsilon: 1.0
+Episode: 1/1000, Score: 36, Epsilon: 1.0
+Episode: 1/1000, Score: 37, Epsilon: 1.0
+Episode: 1/1000, Score: 38, Epsilon: 1.0
+Episode: 1/1000, Score: 39, Epsilon: 1.0
+Episode: 1/1000, Score: 40, Epsilon: 1.0
+Episode: 1/1000, Score: 41, Epsilon: 1.0
+Episode: 1/1000, Score: 42, Epsilon: 1.0
+Episode: 1/1000, Score: 43, Epsilon: 1.0
+Episode: 1/1000, Score: 44, Epsilon: 1.0
+Episode: 1/1000, Score: 45, Epsilon: 1.0
+Episode: 1/1000, Score: 46, Epsilon: 1.0
+Episode: 1/1000, Score: 47, Epsilon: 1.0
+Episode: 1/1000, Score: 48, Epsilon: 1.0
+Episode: 1/1000, Score: 49, Epsilon: 1.0
+Episode: 1/1000, Score: 50, Epsilon: 1.0
+Episode: 1/1000, Score: 51, Epsilon: 1.0
+Episode: 1/1000, Score: 52, Epsilon: 1.0
+Episode: 1/1000, Score: 53, Epsilon: 1.0
+Episode: 1/1000, Score: 54, Epsilon: 1.0
+Episode: 1/1000, Score: 55, Epsilon: 1.0
+Episode: 1/1000, Score: 56, Epsilon: 1.0
+Episode: 1/1000, Score: 57, Epsilon: 1.0
+Episode: 1/1000, Score: 58, Epsilon: 1.0
+Episode: 1/1000, Score: 59, Epsilon: 1.0
+Episode: 1/1000, Score: 60, Epsilon: 1.0
+Episode: 1/1000, Score: 61, Epsilon: 1.0
+Episode: 1/1000, Score: 62, Epsilon: 1.0
+Episode: 1/1000, Score: 63, Epsilon: 1.0
+Episode: 1/1000, Score: 64, Epsilon: 1.0
+Episode: 1/1000, Score: 65, Epsilon: 1.0
+Episode: 1/1000, Score: 66, Epsilon: 1.0
+Episode: 1/1000, Score: 67, Epsilon: 1.0
+Episode: 1/1000, Score: 68, Epsilon: 1.0
+Episode: 1/1000, Score: 69, Epsilon: 1.0
+Episode: 1/1000, Score: 70, Epsilon: 1.0
+Traceback (most recent call last):
+  File "c:\Python\JEPARL\train_model.py", line 36, in <module>
+    agent.replay(batch_size)
+  File "c:\Python\JEPARL\dqn_agent.py", line 67, in replay
+    loss = self.loss_fn(self.model(state), target_f)
+                        ^^^^^^^^^^^^^^^^^
+  File "C:\Users\adamw\.conda\envs\LLM\Lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\adamw\.conda\envs\LLM\Lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\adamw\.conda\envs\LLM\Lib\site-packages\torch\nn\modules\container.py", line 217, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "C:\Users\adamw\.conda\envs\LLM\Lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\adamw\.conda\envs\LLM\Lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\adamw\.conda\envs\LLM\Lib\site-packages\torch\nn\modules\linear.py", line 116, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

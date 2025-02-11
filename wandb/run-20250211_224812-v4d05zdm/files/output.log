@@ -1,0 +1,27 @@
+Episode: 1/1000, Score: 68, Epsilon: 0.79
+Episode: 2/1000, Score: 13, Epsilon: 0.7
+Episode: 3/1000, Score: 19, Epsilon: 0.6
+Traceback (most recent call last):
+  File "c:\Python\JEPARL\train_model.py", line 47, in <module>
+    train_model()
+  File "c:\Python\JEPARL\train_model.py", line 34, in train_model
+    agent.replay(batch_size)
+  File "c:\Python\JEPARL\dqn_agent.py", line 67, in replay
+    loss = self.loss_fn(self.model(state), target_f)
+                        ^^^^^^^^^^^^^^^^^
+  File "C:\Users\adamw\.conda\envs\LLM\Lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\adamw\.conda\envs\LLM\Lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\adamw\.conda\envs\LLM\Lib\site-packages\torch\nn\modules\container.py", line 217, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "C:\Users\adamw\.conda\envs\LLM\Lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\adamw\.conda\envs\LLM\Lib\site-packages\torch\nn\modules\module.py", line 1514, in _call_impl
+    forward_call = (self._slow_forward if torch._C._get_tracing_state() else self.forward)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
