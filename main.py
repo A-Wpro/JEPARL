@@ -3,13 +3,13 @@ from dqn_agent import DQNAgent
 import numpy as np
 
 # Initialize the environment and agent
-env = CustomEnv(visible=True, world_size=125, hp=3)
+env = CustomEnv(visible=True, world_size=125, hp=3,bonus_pixel_prop=0.05,score_up=1000)
 state_size = (11, 11)  # Surrounding observation size
 action_size = env.action_space.n
 agent = DQNAgent(state_size, action_size)
 
 # Load the trained model
-agent.load("dqn_agent.pth")
+agent.load("dqn_agent_100.pth")
 
 # Run the environment with the trained agent
 state = env.reset()
