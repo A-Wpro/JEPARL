@@ -1,0 +1,23 @@
+Episode: 1/1000, Score: 125, Epsilon: 0.59
+Episode: 2/1000, Score: 229, Epsilon: 0.18
+Traceback (most recent call last):
+  File "c:\Python\JEPARL\train_model.py", line 47, in <module>
+    train_model()
+  File "c:\Python\JEPARL\train_model.py", line 34, in train_model
+    agent.replay(batch_size)
+  File "c:\Python\JEPARL\dqn_agent.py", line 67, in replay
+    loss = self.loss_fn(self.model(state), target_f)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\adamw\.conda\envs\LLM\Lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\adamw\.conda\envs\LLM\Lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\adamw\.conda\envs\LLM\Lib\site-packages\torch\nn\modules\loss.py", line 535, in forward
+    return F.mse_loss(input, target, reduction=self.reduction)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\adamw\.conda\envs\LLM\Lib\site-packages\torch\nn\functional.py", line 3339, in mse_loss
+    return torch._C._nn.mse_loss(expanded_input, expanded_target, _Reduction.get_enum(reduction))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

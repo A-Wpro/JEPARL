@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "c:\Python\JEPARL\train_model.py", line 47, in <module>
+    train_model()
+  File "c:\Python\JEPARL\train_model.py", line 34, in train_model
+    agent.replay(batch_size)
+  File "c:\Python\JEPARL\dqn_agent.py", line 77, in replay
+    self.log_variables()
+  File "c:\Python\JEPARL\dqn_agent.py", line 87, in log_variables
+    wandb.log({
+    ^^^^^
+NameError: name 'wandb' is not defined

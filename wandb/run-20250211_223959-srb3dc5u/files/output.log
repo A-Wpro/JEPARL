@@ -1,0 +1,14 @@
+Episode: 1/1000, Score: 84, Epsilon: 0.73
+Episode: 2/1000, Score: -1, Epsilon: 0.69
+Episode: 3/1000, Score: 31, Epsilon: 0.56
+Episode: 4/1000, Score: 136, Epsilon: 0.27
+Episode: 5/1000, Score: 35, Epsilon: 0.21
+Traceback (most recent call last):
+  File "c:\Python\JEPARL\train_model.py", line 47, in <module>
+    train_model()
+  File "c:\Python\JEPARL\train_model.py", line 34, in train_model
+    agent.replay(batch_size)
+  File "c:\Python\JEPARL\dqn_agent.py", line 52, in replay
+    state = torch.tensor(state, dtype=torch.float32).flatten().unsqueeze(0).to(self.device)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "c:\Python\JEPARL\train_model.py", line 47, in <module>
+    train_model()
+  File "c:\Python\JEPARL\train_model.py", line 14, in train_model
+    agent = DQNAgent(state_size, action_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python\JEPARL\dqn_agent.py", line 20, in __init__
+    self.model = self._build_model()
+                 ^^^^^^^^^^^^^^^^^^^
+  File "c:\Python\JEPARL\dqn_agent.py", line 28, in _build_model
+    nn.Linear(self.state_size, 24),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\adamw\.conda\envs\LLM\Lib\site-packages\torch\nn\modules\linear.py", line 98, in __init__
+    self.weight = Parameter(torch.empty((out_features, in_features), **factory_kwargs))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: empty(): argument 'size' failed to unpack the object at pos 2 with error "type must be tuple of ints,but got tuple"
