@@ -14,6 +14,7 @@ class CustomEnv(gym.Env):
         self.bonus_pixel_prop = bonus_pixel_prop
         self.hp = hp
         self.score_up = score_up
+        self.agent_total_bonus = 0
 
         # Define action and observation space
         # Actions: 0: left, 1: right, 2: up, 3: down, 4: idle
@@ -200,7 +201,8 @@ class CustomEnv(gym.Env):
 
         # Check for bonus zones
         if self.world[self.agent_pos[0], self.agent_pos[1]] == 3:
-            self.score += self.score_up
+            self.agent_total_bonus += 1
+            self.score += self.score_up * self.agent_total_bonus
             self.world[self.agent_pos[0], self.agent_pos[1]] = 1  # Make the bonus zone disappear
 
         # Update score
