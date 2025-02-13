@@ -15,6 +15,7 @@ class CustomEnv(gym.Env):
         self.hp = hp
         self.score_up = score_up
         self.agent_total_bonus = 0
+        self.agent_total_moves = 0
 
         # Define action and observation space
         # Actions: 0: left, 1: right, 2: up, 3: down, 4: idle
@@ -45,7 +46,8 @@ class CustomEnv(gym.Env):
         self.agent_pos = np.array([self.world_size // 2, self.world_size // 2])
         self.agent_hp = self.hp
         self.score = 0
-
+        self.agent_total_bonus = 0
+        self.agent_total_moves = 0
         if self.visible:
             self._init_render()
 
@@ -197,7 +199,8 @@ class CustomEnv(gym.Env):
         # Check for damage zones
         if self.world[self.agent_pos[0], self.agent_pos[1]] == 2:
             self.agent_hp -= 1
-            self.score -= 100
+            
+            self.score = self.score- 1000
 
         # Check for bonus zones
         if self.world[self.agent_pos[0], self.agent_pos[1]] == 3:
@@ -210,12 +213,14 @@ class CustomEnv(gym.Env):
 
         # Check if the agent is dead
         done = self.agent_hp <= 0
+        if done:
+            self.score = 100*self.agent_total_moves
 
         # Return observation, reward, done, info
         observation = self._get_observation()
         reward = 1 if not done else -10  # Example reward structure
         info = {"score": self.score, "hp": self.agent_hp}
-
+        self.agent_total_moves += 1 
         return observation, reward, done, info
 
     def render(self, mode='human'):

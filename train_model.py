@@ -3,14 +3,14 @@ from dqn_agent import DQNAgent
 import numpy as np
 import wandb
 
-env = CustomEnv(visible=False, world_size=125, hp=3,bonus_pixel_prop=0.15,score_up=1000)
+env = CustomEnv(visible=False, world_size=125, hp=1,bonus_pixel_prop=0.15,score_up=1000)
 state_size = (11, 11)  # Surrounding observation size
 action_size = env.action_space.n
 agent = DQNAgent(state_size, action_size)
 done = False
 batch_size = 32
 
-EPISODES = 1000
+EPISODES = 2000
 time_max = 100
 wandb.init(project="dqn-agent")
 
@@ -40,7 +40,7 @@ for e in range(EPISODES):
             print(f"Episode: {e + 1}/{EPISODES}, Score: {env.score}, Epsilon: {agent.epsilon:.2}")
             wandb.log({"episode": e+1, "score": env.score, "epsilon": agent.epsilon})
             break
-    if e == 100 or e == 500:
+    if e == int(EPISODES*0.25) or e == int(EPISODES*0.50) or e == int(EPISODES*0.75):
         agent.save(f"dqn_agent_{e}.pth")
  
 # Save the trained model
