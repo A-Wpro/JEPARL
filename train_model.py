@@ -25,7 +25,7 @@ for e in range(EPISODES):
         next_state, reward, done, info = env.step(action)
         next_state = env.get_surrounding_observation(radius=5)
         next_state = np.expand_dims(next_state, axis=0)
-        reward = reward if not done else -10
+
 
         episode_score += reward
 
@@ -37,8 +37,8 @@ for e in range(EPISODES):
 
         
         if done or time==time_max-1:
-            print(f"Episode: {e + 1}/{EPISODES}, Score: {env.score}, Epsilon: {agent.epsilon:.2}")
-            wandb.log({"episode": e+1, "score": env.score, "epsilon": agent.epsilon})
+            print(f"Episode: {e + 1}/{EPISODES}, Score: {episode_score}, Epsilon: {agent.epsilon:.2}")
+            wandb.log({"episode": e+1, "score": episode_score, "epsilon": agent.epsilon})
             break
     if e == int(EPISODES*0.25) or e == int(EPISODES*0.50) or e == int(EPISODES*0.75):
         agent.save(f"dqn_agent_{e}.pth")

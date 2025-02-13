@@ -214,14 +214,14 @@ class CustomEnv(gym.Env):
         # Check if the agent is dead
         done = self.agent_hp <= 0
         if done:
-            self.score = -100*(self.agent_total_moves+1)
+            self.score = -(10000-100*(self.agent_total_moves+1))
 
         # Return observation, reward, done, info
         observation = self._get_observation()
-        reward = 1 if not done else -10  # Example reward structure
+         
         info = {"score": self.score, "hp": self.agent_hp}
         self.agent_total_moves += 1 
-        return observation, reward, done, info
+        return observation, self.score, done, info
 
     def render(self, mode='human'):
         if not self.visible:
