@@ -214,7 +214,7 @@ class CustomEnv(gym.Env):
         # Check if the agent is dead
         done = self.agent_hp <= 0
         if done:
-            self.score = 100*self.agent_total_moves
+            self.score = -100*(self.agent_total_moves+1)
 
         # Return observation, reward, done, info
         observation = self._get_observation()
