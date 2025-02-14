@@ -6,7 +6,7 @@ import random
 from collections import deque
 import wandb
 
-class PrioritizedReplayBuffer:
+class PrioritizedReplayBuffer: #TO REMOVE 
     def __init__(self, capacity, alpha=0.6, beta=0.4, beta_increment=1e-5):
         self.capacity = capacity
         self.alpha = alpha
