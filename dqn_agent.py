@@ -6,7 +6,7 @@ import random
 from collections import deque
 import wandb
 
-class PrioritizedReplayBuffer: #TO REMOVE & to create new nn, maybe no DRL ?  aled :(
+class PrioritizedReplayBuffer: #TO REMOVE & to create new nn, maybe no DRL ?  aled :(, i will work tomrow
     def __init__(self, capacity, alpha=0.6, beta=0.4, beta_increment=1e-5):
         self.capacity = capacity
         self.alpha = alpha
